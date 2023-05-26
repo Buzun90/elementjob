@@ -1,0 +1,21 @@
+---
+import { Picture } from '@astrojs/image/components';
+
+const { srcPicture } = Astro.props;
+---
+<div class="relative flex flex-col col-span-2 py-40 md:p-20">
+  <Picture
+    src={srcPicture}
+    alt=""
+    class="absolute inset-0 z-0 h-full w-full object-cover"
+    widths={[684]}
+    aspectRatio={'16:9'}
+    sizes="(min-width: 1024px) 684px, 100vw"
+  />
+  <div class="absolute bottom-0 bg-white/50 py-2 px-3 space-y-3">
+    <a href="/about" title="about industronix" class="text-primary">About Industronix</a>
+    <h4 class="text-xl">We're in this since 1980. Industrial around the world.</h4>
+    <p class="hidden lg:block">Allan wrasse climbing gourami amur pike Arctic char, steelhead sprat sea lamprey grunion. Walleye poolfish sand goby butterfly ray stream catfish.</p>
+    <a href="/about" class="text-base hover:text-primary border-2 border-rose-400 duration-200 focus-visible:outline-2 focus-visible:outline-rose-50 focus-visible:outline-offset-2 focus:outline-none font-normal group hover:bg-transparent hover:border-primary inline-flex items-center justify-center rounded-full text-accent bg-primary px-6 py-1">Learn</a>
+  </div>
+</div>

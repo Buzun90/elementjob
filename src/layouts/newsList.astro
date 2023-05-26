@@ -1,0 +1,75 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from '@layouts/main.astro';
+import InnovationIndustries from '@components/homepage-1/InnovationIndustries.astro';
+import LinkButton from '@components/Linkbutton.astro';
+import NewsCard from '@components/NewsCard.astro';
+import Breadcrumbs from '@components/Breadcrumbs.astro';
+import { CONFIG } from 'site.config.mjs';
+
+export interface Props {
+  pageNum: number;
+  totalPages: number;
+  posts: CollectionEntry<"news">[];
+}
+
+const { pageNum, totalPages, posts } = Astro.props;
+const prev = pageNum > 1 ? "" : "disabled";
+const next = pageNum < totalPages ? "" : "disabled";
+const seo = {
+	title: `News (${pageNum}) | ${CONFIG.SITE_NAME}`,
+	description: `${CONFIG.SITE_NAME} News Page`,
+};
+---
+<Layout content={seo} activeNav="resources">
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="relative isolate overflow-hidden py-0 md:py-24">
+      <Breadcrumbs />
+      <h2 class="px-3 md:px-0 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Nieuws</h2>
+      <p class="px-3 md:px-0 mt-6 text-lg leading-8 text-gray-500">Het laatste nieuws</p>
+      <div role="list" class="px-3 md:px-0 mx-auto mt-4 grid auto-rows-fr grid-cols-2 gap-4 lg:mx-0 lg:max-w-none lg:grid-cols-3 pb-6">
+        {posts.map((d) => (
+          <NewsCard frontmatter={d.data} href={d.slug} />
+        ))}
+      </div>
+      {
+        totalPages > 1 && (
+          <nav class="mt-auto mb-8 flex justify-center" aria-label="Pagination">
+            <LinkButton
+              disabled={prev === "disabled"}
+              href={`/news${pageNum - 1 !== 1 ? "/" + (pageNum - 1) : ""}`}
+              className={`mr-4 select-none ${prev}`}
+              ariaLabel="Previous"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class={`${prev}-svg inline-block w-6 h-6`}>
+                <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" />
+              </svg>
+              Prev
+            </LinkButton>
+            <LinkButton
+              disabled={next === "disabled"}
+              href={`/news/${pageNum + 1}`}
+              className={`ml-4 select-none ${next}`}
+              ariaLabel="Next"
+            >
+              Next
+              <svg xmlns="http://www.w3.org/2000/svg" class={`${next}-svg inline-block w-6 h-6`}>
+                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+              </svg>
+            </LinkButton>
+          </nav>
+        )
+      }
+    </div>
+  </div>
+  
+</Layout>
+
+<style>
+  .disabled {
+    @apply pointer-events-none select-none opacity-50 hover:text-white group-hover:bg-primary;
+  }
+  .disabled-svg {
+    @apply group-hover:!bg-primary;
+  }
+</style>

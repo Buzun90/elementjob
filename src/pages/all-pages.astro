@@ -1,0 +1,126 @@
+---
+import { getCollection } from 'astro:content';
+import Main from "@layouts/main.astro";
+import { NavBar } from "@components/all-pages/Navbar";
+import { CONFIG } from 'site.config.mjs';
+
+const seo = {
+  title: `All Pages | ${CONFIG.SITE_NAME}`,
+  description: 'Industronix is a leading provider of industrial automation solutions. We provide a wide range of products and services to meet the needs of our customers. We are a one-stop shop for all your automation needs.',
+}
+
+const allIndustriesEntries = await getCollection('industries', ({ data }) => {
+  return data.draft !== true;
+});
+const newsEntries = await getCollection('news', ({ data }) => {
+  return data.draft !== true;
+});
+const sortedNews = newsEntries.sort(function (a, b) {
+  return b.data.date.valueOf() - a.data.date.valueOf();
+});
+---
+
+<Main content={seo} activeNav="contact">
+  <div class="flex flex-col border-b border-t border-gray-200">
+    <nav aria-label="Offers" class="order-last lg:order-first">
+      <div class="mx-auto max-w-7xl lg:px-8">
+        <ul role="list" class="grid grid-cols-1 divide-y divide-gray-200 lg:grid-cols-3 lg:divide-y-0 lg:divide-x">
+          <li class="flex flex-col">
+            <a href="#" class="relative flex flex-1 flex-col justify-center bg-white py-6 px-4 text-center focus:z-10">
+              <p class="text-sm text-gray-500">Quick Starter</p>
+              <p class="font-semibold text-gray-900">All section in a single component</p>
+            </a>
+          </li>
+
+          <li class="flex flex-col">
+            <a href="#" class="relative flex flex-1 flex-col justify-center bg-white py-6 px-4 text-center focus:z-10">
+              <p class="text-sm text-gray-500">Develop when you&#039;re ready</p>
+              <p class="font-semibold text-gray-900">Extend the component</p>
+            </a>
+          </li>
+
+          <li class="flex flex-col">
+            <a href="#" class="relative flex flex-1 flex-col justify-center bg-white py-6 px-4 text-center focus:z-10">
+              <p class="text-sm text-gray-500">From developer for developer</p>
+              <p class="font-semibold text-gray-900">Versatile template for Industrial website</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section aria-labelledby="features-heading" class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-8">
+    <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
+      <div class="max-w-3xl">
+        <h2 id="features-heading" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">All Pages</h2>
+        <p class="mt-4 text-gray-500">The Organize modular system offers endless options for arranging your favorite and most used items. Keep everything at reach and in its place, while dressing up your workspace.</p>
+      </div>
+      <div class="mt-4">
+        <NavBar client:load />
+        <div id="features-panel-1" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-1" role="tabpanel" tabindex="0">
+          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
+            <div class="mt-6 lg:col-span-5 lg:mt-0 prose prose-sm prose-a:no-underline">
+              <ul>
+                <li>
+                  Homepage
+                  <ul>
+                    <li><a href="/demo">Homepage 1</a></li>
+                    <li><a href="/demo-2">Homepage 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/meet-the-team">Meet The Team</a></li>
+                <li><a href="/expertise">Expertise</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/contact-form">Contact Form</a></li>
+                <li><a href="/sign-in">Login Form</a></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="aspect-w-2 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 sm:aspect-w-5 sm:aspect-h-2">
+                <img src="https://raw.githubusercontent.com/mcstech/.github/main/resources/industronix/My%20Theme%20Image.png" alt="Main image" class="object-cover object-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="features-panel-2" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-2" role="tabpanel" tabindex="0">
+          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
+            <div class="mt-6 lg:col-span-5 lg:mt-0 prose prose-sm prose-a:no-underline">
+              <ul>
+                <li><a href="/industry" class="font-bold">Industries</a></li>
+                {allIndustriesEntries.map((d) => (
+                  <li><a href={`/industry/${d.slug}`}>{d.data.title}</a></li>
+                ))}
+              </ul>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="aspect-w-2 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 sm:aspect-w-5 sm:aspect-h-2">
+                <img src="https://raw.githubusercontent.com/mcstech/.github/main/resources/industronix/industry%20page.png" alt="Industry page" class="object-cover object-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="features-panel-3" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-3" role="tabpanel" tabindex="0">
+          <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
+            <div class="mt-6 lg:col-span-5 lg:mt-0 prose prose-sm prose-a:no-underline">
+              <ul>
+                <li><a href="/news" class="font-bold">All news</a></li>
+                {sortedNews.map((d) => (
+                  <li><a href={`/news/${d.slug}`}>{d.data.title}</a></li>
+                ))}
+              </ul>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="aspect-w-2 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 sm:aspect-w-5 sm:aspect-h-2">
+                <img src="https://raw.githubusercontent.com/mcstech/.github/main/resources/industronix/Meet%20The%20Team.png" alt="Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils." class="object-cover object-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Main>

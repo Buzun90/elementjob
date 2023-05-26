@@ -1,0 +1,57 @@
+---
+const data = [
+  {
+    name: 'Bryce Wayne',
+    title: 'CEO',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+    location: 'Toronto, Canada'
+  },
+  {
+    name: 'Holly Arasty',
+    title: 'Chief Commercial Engineer',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80',
+    location: 'Horishima, Japan'
+  },
+  {
+    name: 'Leonard Krasner',
+    title: 'Principal Engineer',
+    image: 'https://plus.unsplash.com/premium_photo-1663076199896-03327c8bba87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+    location: 'Kuala Lumpur, Malaysia'
+  },
+  {
+    name: 'Floyd Miles',
+    title: 'Principal Engineer',
+    image: 'https://plus.unsplash.com/premium_photo-1663076511746-193256807f16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2476&q=80',
+    location: 'Toronto, Canada'
+  },
+  {
+    name: 'Tom Cawan',
+    title: 'Principal Engineer',
+    image: 'https://plus.unsplash.com/premium_photo-1663099866716-66129474193c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80',
+    location: 'Toronto, Canada'
+  },
+  {
+    name: 'Tom Cryse',
+    title: 'Principal Engineer',
+    image: 'https://plus.unsplash.com/premium_photo-1661963426676-d7fbbed165ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+    location: 'Toronto, Canada'
+  }
+]
+---
+
+<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Our team</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
+  </div>
+  <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
+    {data.map((d) => (
+      <li>
+        <img class="aspect-[14/13] w-full rounded-2xl object-cover" src={d.image} alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-primary">{d.name}</h3>
+        <p class="text-base leading-7 text-gray-500">{d.title}</p>
+        <p class="text-sm leading-6 text-gray-600">{d.location}</p>
+      </li>
+    ))}
+  </ul>
+</div>

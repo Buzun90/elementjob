@@ -1,0 +1,24 @@
+---
+import Logo from '@components/Logo.astro';
+import NewsClip from './NewsClip.astro';
+import Carousel from './Carousel.astro';
+---
+
+<div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+  <div class="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-48 lg:pb-56 xl:col-span-6">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <NewsClip />
+      <h1 class="mt-10 text-3xl font-bold tracking-tight text-orange-500 sm:text-6xl">Vakmanschap en excellentie voor de utiliteitsbouw.</h1>
+      <p class="mt-6 text-lg leading-8 text-gray-300">Ontdek de kracht van Elementjob, gespecialiseerd in het leveren van complete schoonmaak- en onderhoudsoplossingen voor uw utiliteitsbouwprojecten. Met ons toegewijde team van experts streven wij ernaar om uw gebouw in optimale conditie te houden, zodat u zich kunt richten op uw kernactiviteiten.</p>
+      <div class="mt-10 flex items-center gap-x-6">
+        <a href="/contact-form" class="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
+          Boek een afspraak
+        </a>
+        <a href="/all-pages" class="text-sm font-semibold leading-6 text-white">Onze Diensten <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+    <Carousel />
+  </div>
+</div>

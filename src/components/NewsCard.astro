@@ -1,0 +1,29 @@
+---
+import type { NewsFrontmatter } from "@content/_schemas";
+
+export interface Props {
+  href?: string;
+  frontmatter: NewsFrontmatter;
+  secHeading?: boolean;
+}
+
+const { frontmatter, href } = Astro.props;
+---
+
+<article class="group/item relative isolate flex flex-col justify-end items-center overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-20 sm:pt-30 lg:pt-40">
+  <img src={frontmatter.thumbnail} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+  <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40 group-hover/item:via-gray-900/50" />
+  <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+  <div class="text-left">
+    <div class="flex flex-col text-gray-400 text-sm">
+      <span>{frontmatter.source}</span>
+      <time>{new Date(frontmatter.date).toDateString()}</time>
+    </div>
+    <h3 class="text-md font-semibold text-white">
+      <a class="group-hover/item:text-primary hover:text-orange-500" href={`/news/${href}`}>{frontmatter.title}</a>
+    </h3>
+    <p class="hidden md:block mt-2 text-sm text-gray-300">
+      <span class="line-clamp-2">{frontmatter.description}</span>
+    </p>
+  </div>
+</article>

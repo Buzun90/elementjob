@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import { CONFIG } from 'site.config.mjs';
+
+import SocialMedia from "@components/socialMedia.astro";
+
+
+
+---
+
+<footer class="bg-gray-900" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <SocialMedia />
+      <div class="md:grid md:grid-cols-2 md:gap-8">
+        <div>
+          <h3 class="text-sm font-semibold leading-6 text-white">Bronnen</h3>
+          <ul role="list" class="mt-6 space-y-4">
+            <li>
+              <a href="/news" class="text-sm leading-6 text-gray-300 hover:text-white">Nieuws</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:grid md:grid-cols-2 md:gap-8">
+        <div>
+          <h3 class="text-sm font-semibold leading-6 text-white">Bedrijf</h3>
+          <ul role="list" class="mt-6 space-y-4">
+            <li>
+              <a href="/about" class="text-sm leading-6 text-gray-300 hover:text-white">Over ons</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Vacatures</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-10 md:mt-0">
+          <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+          <ul role="list" class="mt-6 space-y-4">
+            <li>
+              <a href="/privacy" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
+            </li>
+            <li>
+              <a href="/terms" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
+      <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2023 {CONFIG.SITE_NAME}, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

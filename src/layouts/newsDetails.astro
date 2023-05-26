@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from '@layouts/main.astro'
+import Grid from '@components/industry/Grid.astro';
+import Header from '@components/news/header.astro';
+
+export interface Props {
+  post: CollectionEntry<"news">;
+}
+
+const { post } = Astro.props;
+
+
+const { title, thumbnail, date, description, tags } = post.data;
+const { Content } = await post.render();
+const ogUrl = new URL(thumbnail ? thumbnail : `${title}.png`, Astro.url.origin)
+  .href;
+const seo = {
+  title,
+  description,
+  image: ogUrl,
+}
+---
+<Layout content={seo} activeNav="resources">
+  <div class="relative overflow-hidden py-24 sm:py-10">
+    <div class="mx-auto max-w-7xl">
+      <Header title={title} date={date} />
+      <figure class="pl-8 py-10 lg:overflow-hidden">
+        <figcaption>
+          <img src={thumbnail} alt={title} class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]">
+        </figcaption>
+      </figure>
+      <div class="max-w-7xl text-base leading-7 text-gray-700 pl-6 pr-3 lg:pl-8">
+        <div class="prose lg:prose-xl">
+          <Content />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,170 @@
+---
+import { getCollection } from 'astro:content';
+
+import Navigation from '@components/Navigation.astro';
+
+export interface Props {
+  activeNav?: "about" | "industry" | "contact" | "expertise" | "resources" | "news" | "technisch-reinigen" | "brandwerende-applicaties" | "overige-diensten" | "vastgoedbeheer";
+}
+
+
+const allbrandwerendEntries = await getCollection('brandwerende-applicaties', ({ data }) => {
+  return data.draft !== true;
+});
+
+
+
+const allTechnischReinigenEntries = await getCollection('technisch-reinigen', ({ data }) => {
+  return data.draft !== true;
+});
+
+const allOverigeDienstenEntries = await getCollection('overige-diensten', ({ data }) => {
+  return data.draft !== true;
+});
+
+const allVastgoedBeheerEntries = await getCollection('vastgoedbeheer', ({ data }) => {
+  return data.draft !== true;
+});
+
+
+
+
+
+
+const { activeNav } = Astro.props;
+---
+
+<Navigation>
+  <li class="group">
+    <a href="/about" class={`menu-item ${activeNav === "about" ? "text-primary" : ""}`}>Over ons</a>
+    {activeNav === "about" ? (
+      <span class='lg:block lg:h-1 lg:w-full lg:bg-blue-500 lg:scale-x-50' />
+    ) : (
+      <span class='lg:block lg:h-1 transition-transform lg:w-full group-hover:lg:bg-blue-500 group-hover:lg:scale-x-50' />
+    )}
+  </li>
+
+  <li class="dropdown group">
+    <a href="/technisch-reinigen" class={`menu-item ${activeNav === "technisch-reinigen" ? "text-primary" : ""} block transition duration-150 ease-in-out`} aria-haspopup="true">
+      Technisch & Industrieel reinigen
+    </a>
+    {activeNav === "technisch-reinigen" ? (
+      <span class='lg:block lg:h-1 lg:w-full lg:bg-blue-500 lg:scale-x-50' />
+    ) : (
+      <span class='lg:block lg:h-1 transition-transform lg:w-full group-hover:lg:bg-blue-500 group-hover:lg:scale-x-50' />
+    )}
+    <ul class="dropdown-menu" aria-labelledby="menu-button" role="menu">
+      <div class="py-1" role="none">
+        {allTechnischReinigenEntries.map((d) => (
+          <li role="menuitem" tabindex="-1">
+            <a class="dropdown-item" href={`/technisch-reinigen/${d.slug}`}>
+              {d.data.title}
+            </a>
+          </li>
+        ))}
+      </div>
+    </ul>
+  </li>
+
+
+
+
+  <li class="dropdown group">
+    <a href="/brandwerende-applicaties" class={`menu-item ${activeNav === "brandwerende-applicaties" ? "text-primary" : ""} block transition duration-150 ease-in-out`} aria-haspopup="true">
+      Brandwerende applicaties
+    </a>
+    {activeNav === "brandwerende-applicaties" ? (
+      <span class='lg:block lg:h-1 lg:w-full lg:bg-blue-500 lg:scale-x-50' />
+    ) : (
+      <span class='lg:block lg:h-1 transition-transform lg:w-full group-hover:lg:bg-blue-500 group-hover:lg:scale-x-50' />
+    )}
+    <ul class="dropdown-menu" aria-labelledby="menu-button" role="menu">
+      <div class="py-1" role="none">
+        {allbrandwerendEntries.map((d) => (
+          <li role="menuitem" tabindex="-1">
+            <a class="dropdown-item" href={`/brandwerende-applicaties/${d.slug}`}>
+              {d.data.title}
+            </a>
+          </li>
+        ))}
+      </div>
+    </ul>
+  </li>
+
+
+
+
+  <li class="dropdown group">
+    <a href="/overige-diensten" class={`menu-item ${activeNav === "overige-diensten" ? "text-primary" : ""} block transition duration-150 ease-in-out`} aria-haspopup="true">
+      Overige Diensten
+    </a>
+    {activeNav === "overige-diensten" ? (
+      <span class='lg:block lg:h-1 lg:w-full lg:bg-blue-500 lg:scale-x-50' />
+    ) : (
+      <span class='lg:block lg:h-1 transition-transform lg:w-full group-hover:lg:bg-blue-500 group-hover:lg:scale-x-50' />
+    )}
+    <ul class="dropdown-menu" aria-labelledby="menu-button" role="menu">
+      <div class="py-1" role="none">
+        {allOverigeDienstenEntries.map((d) => (
+          <li role="menuitem" tabindex="-1">
+            <a class="dropdown-item" href={`/overige-diensten/${d.slug}`}>
+              {d.data.title}
+            </a>
+          </li>
+        ))}
+      </div>
+    </ul>
+  </li>
+
+
+
+
+
+  
+
+
+
+  <li class="group">
+    <a href="/news" class={`menu-item ${activeNav === "news" ? "text-primary" : ""}`}>Nieuws</a>
+    {activeNav === "news" ? (
+      <span class='lg:block lg:h-1 lg:w-full lg:bg-blue-500 lg:scale-x-50' />
+    ) : (
+      <span class='lg:block lg:h-1 transition-transform lg:w-full group-hover:lg:bg-blue-500 group-hover:lg:scale-x-50' />
+    )}
+  </li>
+</Navigation>
+
+<style>
+
+
+  .menu-item {
+    @apply text-sm font-semibold leading-6 text-gray-900 hover:text-primary;
+  }
+  .dropdown {
+    @apply min-w-min relative block;
+  }
+
+  .menu-item:hover,
+  .menu-item.text-primary {
+    color: rgb(255, 102, 0); /* Orange color */
+  }
+
+
+  .dropdown:hover .dropdown-menu {
+    @apply lg:block lg:absolute;
+  }
+  .dropdown-menu {
+    @apply lg:backdrop-blur-md lg:w-full lg:rounded lg:absolute lg:z-10 lg:hidden font-medium lg:bg-white/90 drop-shadow-xl;
+    @apply lg:ring-1 lg:ring-black lg:ring-opacity-5 lg:focus:outline-none;
+    @apply lg:divide-y divide-gray-100;
+  }
+  .dropdown-item {
+    @apply block text-sm font-medium leading-6 text-gray-900 px-4 py-2;
+  }
+  
+  .menu-item:hover {
+    color: rgb(255, 102, 0);
+  }
+
+
+</style>

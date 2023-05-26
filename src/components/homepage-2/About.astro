@@ -1,0 +1,18 @@
+---
+import AboutNumbers from './about-numbers.astro';
+import AboutText from './about-text.astro';
+
+const {
+  numOfClients,
+  numOfProjects = '200+',
+  srcPicture,
+} = Astro.props;
+---
+<section class="relative my-0 bg-white">
+  <div class="mx-auto max-w-7xl flex relative">
+    <div class="grid grid-cols-1 md:grid-cols-3 w-full">
+      <AboutNumbers numOfClients={numOfClients} numOfProjects={numOfProjects} />
+      <AboutText srcPicture={srcPicture} />
+    </div>
+  </div>
+</section>

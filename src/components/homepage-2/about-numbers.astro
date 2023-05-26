@@ -1,0 +1,53 @@
+---
+const { numOfClients, numOfProjects } = Astro.props;
+---
+<div class="wrapper">
+  <div class="w-full relative flex">
+    <div class="pl-5 flex flex-wrap content-start w-full relative overflow-hidden">
+      <div class="absolute w-full left-5 top-20 mb-0 z-10">
+        <div>
+          <div class="text-left">
+            <div class="w-20 h-20 relative inline-block">
+              <div class="absolute w-full h-full">
+                <div class="bg-white absolute w-full h-full top-0 left-0" />
+                <div class="bg-primary absolute w-full h-full top-0 -left-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <div class="bg-primary relative flex">
+          <div class="justify-center pl-20 pt-48 pb-20 flex flex-col space-y-10 w-full">
+            <div>
+              <h3 class="numeral">{numOfClients}</h3>
+              <p class="caption">Happy clients</p>
+            </div>
+            <div>
+              <h3 class="numeral">{numOfProjects}</h3>
+              <p class="caption">Completed projects</p>
+            </div>
+          </div>
+          <div class="absolute bottom-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-20 h-20 text-accent">
+              <path fill-rule="evenodd" d="M3.97 3.97a.75.75 0 011.06 0l13.72 13.72V8.25a.75.75 0 011.5 0V19.5a.75.75 0 01-.75.75H8.25a.75.75 0 010-1.5h9.44L3.97 5.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>                        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .wrapper {
+    @apply relative flex col-span-1;
+  }
+  .numeral {
+    @apply text-7xl font-bold font-mono lining-nums;
+    -webkit-text-stroke: 1px #FFF;
+    -webkit-text-fill-color: transparent;
+  }
+  .caption {
+    @apply text-xl font-bold text-accent;
+  }
+</style>

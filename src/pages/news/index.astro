@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+
+import NewsList from '@layouts/newsList.astro';
+import getPageNumbers from "@utils/getPageNumbers";
+import { CONFIG } from 'site.config.mjs';
+
+const newsEntries = await getCollection('news', ({ data }) => {
+  return data.draft !== true;
+});
+const sortedNews = newsEntries.sort(function (a, b) {
+  return b.data.date.valueOf() - a.data.date.valueOf();
+});
+
+const totalPages = getPageNumbers(sortedNews.length);
+const paginatedNews = sortedNews.slice(0, CONFIG?.news?.postsPerPage);
+---
+<NewsList pageNum={1} totalPages={totalPages.length} posts={paginatedNews} />

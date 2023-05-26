@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/main.astro'
+import Grid from '@components/industry/Grid.astro';
+
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const entries = await getCollection('technisch-reinigen');
+  return entries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+// 2. When it's time to render, you can get the entry directly from the prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const seo = {
+  title: entry.data.title,
+  description: entry.data.description,
+  image: entry.data.thumbnail,
+}
+---
+
+<Layout content={seo} activeNav="technisch-reinigen">
+  <div class="absolute inset-0 -z-10">
+    <div class="relative isolate inset-0 w-full h-full overflow-hidden">
+      <Grid />
+    </div>
+  </div>
+  <div class="relative overflow-hidden py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="mx-auto max-w-2xl lg:mx-0 pl-6 lg:pl-8">
+        <a href="/industry" class="text-lg font-semibold leading-8 tracking-tight text-primary">Technisch reinigen</a>
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{entry.data.title}</h1>
+      </div>
+      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-y-10 lg:gap-y-16 gap-x-8 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
+        <div class="relative lg:order-last lg:col-span-5">
+          <svg class="absolute -top-[50rem] left-1 -z-10 h-[64rem] w-[175.5rem] -translate-x-1/2 stroke-gray-900/10 [mask-image:radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)]" aria-hidden="true">
+            <defs>
+              <pattern id="e87443c8-56e4-4c20-9111-55b82fa704e3" width="200" height="200" patternUnits="userSpaceOnUse">
+                <path d="M0.5 0V200M200 0.5L0 0.499983" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)" />
+          </svg>
+          <figure class="pl-8 lg:sticky lg:top-10 lg:overflow-hidden">
+            <figcaption>
+              <img src={entry.data.thumbnail} alt={entry.data.title} class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]">
+            </figcaption>
+          </figure>
+        </div>
+        <div class="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7 pl-6 pr-3 lg:pl-8">
+          <div class="prose lg:prose-xl">
+            <Content />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</Layout>

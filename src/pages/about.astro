@@ -1,0 +1,26 @@
+---
+import Main from "@layouts/main.astro";
+import Hero from "@components/about/Hero.astro";
+
+import Inspiring1 from "@components/about/Inspiring-1.astro";
+import Experience from "@components/about/Experience.astro";
+import Experience2 from "@components/about/Experience-2.astro";
+
+import { CONFIG } from 'site.config.mjs';
+
+const seo = {
+  title: `about us | ${CONFIG.SITE_NAME}`,
+  description: 'Elementjob Multidiensten: Uw betrouwbare partner voor professionele schoonmaak- en onderhoudsdiensten. Wij bieden een totaaloplossing voor uw uti.'
+
+  
+}
+---
+
+<Main content={seo} activeNav="about">
+  <div class="bg-white">
+    <Hero />
+    <Inspiring1 />
+    <Experience />
+    <Experience2 />
+  </div>
+</Main>

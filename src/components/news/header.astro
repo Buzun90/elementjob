@@ -1,0 +1,13 @@
+---
+const { title, date } = Astro.props;
+---
+<div class="mx-auto max-w-4xl lg:mx-0 pl-6 lg:pl-8">
+  <a href="/news" class="text-xs font-semibold leading-8 tracking-tight text-gray-600">&laquo; News</a>
+  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{title}</h1>
+  <div class="flex items-center opacity-80">
+    <span class="sr-only">Posted on:</span>
+    <span class="text-sm text-gray-400">
+      <time datetime={new Date(date).toLocaleString()}>{new Date(date).toLocaleString('en-GB')}</time>
+    </span>
+  </div>
+</div>

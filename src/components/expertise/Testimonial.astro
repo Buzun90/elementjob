@@ -1,0 +1,22 @@
+---
+import GridPattern from "@components/GridPattern.astro";
+import StarRating from "@components/StarRating.astro";
+---
+<aside
+  aria-label="Testimonial from Somebody"
+  class="relative bg-slate-100 py-16 sm:py-32"
+>
+  <div class="text-slate-900/10">
+    <GridPattern x="50%" patternTransform="translate(0 80)" />
+  </div>
+  <div class="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-2 relative">
+    <figure>
+      <div class="flex text-slate-900 sm:justify-center">
+        <StarRating rating="5" />
+      </div>
+      <blockquote class="mt-10 font-display text-4xl font-medium tracking-tight text-slate-900 sm:text-center">
+        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.
+      </blockquote>
+    </figure>
+  </div>
+</aside>

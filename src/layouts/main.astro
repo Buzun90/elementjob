@@ -1,0 +1,19 @@
+---
+import Footer from "./footer.astro";
+import Header from "./header.astro";
+import Head from '@components/head/base.astro'
+import "@styles/base.css";
+
+const { content, activeNav } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<Head {...content} />
+	</head>
+	<body>
+		<Header {activeNav} />
+		<slot />
+		<Footer />
+	</body>
+</html>

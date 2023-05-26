@@ -1,0 +1,23 @@
+---
+import Footer from "./footer.astro";
+import Header from "./header.astro";
+import Head from '@components/head/base.astro'
+import "@styles/base.css";
+
+const { content, activeNav } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<Head {content} />
+	</head>
+	<body>
+		<Header {activeNav} />
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 py-10">
+      <div class="prose prose-headings:text-gray-800 md:prose-md lg:prose-lg xl:prose-xl">
+        <slot />
+      </div>
+    </div>
+		<Footer />
+	</body>
+</html>

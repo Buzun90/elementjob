@@ -1,0 +1,42 @@
+---
+import { CONFIG } from 'site.config.mjs';
+// Component Imports
+import Grid from '@components/Grid.astro';
+import Glow from '@components/Glow.astro';
+import Hero from '@components/homepage-1/Hero.astro';
+import InnovationIndustries from '@components/homepage-1/InnovationIndustries.astro';
+import WhoWeAre from '@components/homepage-1/WhoWeAre.astro';
+import News from '@components/homepage-1/News.astro';
+import Consult from '@components/homepage-1/Consult.astro';
+import Partners from '@components/homepage-1/Partners.astro';
+import Footer from '@layouts/footer.astro';
+import "@styles/base.css";
+import Header from '@layouts/header.astro'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{CONFIG.SITE_NAME}</title>
+	</head>
+
+	<body>
+		<Header/>
+		<div class="bg-slate-900">
+			<div class="relative">
+				<div class="absolute inset-0 overflow-hidden z-0">
+					<Grid />
+					<Glow />
+				</div>
+				<Hero />
+			</div>
+			<InnovationIndustries />
+
+			<Footer />
+		</div>
+	</body>
+</html>

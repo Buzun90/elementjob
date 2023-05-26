@@ -1,0 +1,28 @@
+---
+import Main from '@layouts/main.astro';
+import Header from '@components/expertise/header.astro'
+import { NavBar } from '@components/expertise/Navbar'
+import InstrumentService from '@components/expertise/InstrumentService.astro';
+import AnalyticalService from '@components/expertise/AnalyticalService.astro';
+import ValveService from '@components/expertise/ValveService.astro';
+import EngineeringService from '@components/expertise/EngineeringService.astro';
+import SystemSupport from '@components/expertise/SystemSupport.astro';
+import Testimonial from '@components/expertise/Testimonial.astro';
+import { CONFIG } from 'site.config.mjs';
+
+const seo = {
+  title: `Expertise | ${CONFIG.SITE_NAME}`,
+  description: 'Industronix is a leading provider of industrial automation solutions. We provide a wide range of products and services to meet the needs of our customers. We are a one-stop shop for all your automation needs.',
+}
+---
+<Main content={seo} activeNav="expertise">
+  <Header />
+  <NavBar client:load />
+  <InstrumentService />
+  <Testimonial />
+  <AnalyticalService />
+  <Testimonial />
+  <ValveService />
+  <EngineeringService />
+  <SystemSupport />
+</Main>

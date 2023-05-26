@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import { CONFIG } from 'site.config.mjs'
+
+const newsEntries = await getCollection('news', ({ data }) => {
+  return data.draft !== true;
+});
+const news = newsEntries.sort(function (a, b) {
+  return b.data.date.valueOf() - a.data.date.valueOf();
+});
+---
+<div class="bg-white flex flex-wrap justify-between gap-10 md:gap-20 px-6 py-10">
+  <header class="space-y-4">
+    <h2 class="text-4xl">{CONFIG.SITE_NAME} in the news</h2>
+    <p class="text-slate-500">What's happening at {CONFIG.SITE_NAME}</p>
+    <div class="mt-10">
+      <a href="/news" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View all</a>
+    </div>
+  </header>
+  <div class="lg:flex-1 lg:pb-5 md:pt-0 relative">
+    <div class="graphic">
+      <img src="/assets/instrument.png" alt="" class="w-full hidden md:block">
+    </div>
+    <div class="news">
+      <div class="flex flex-col">
+        <span class="text-sm text-gray-400">{news[0].data.source}</span>
+        <time class="text-sm text-gray-400">{new Date(news[0].data.date).toDateString()}</time>
+      </div>
+      <div>
+        <p class="text-3xl">{news[0].data.title}</p>
+        <div class="mt-10">
+          <a
+            href={`/news/${news[0].slug}`}
+            class="after:content-['↗︎'] after:ml-0.5 rounded-full px-3.5 py-2.5 text-sm font-semibold text-gray-800 shadow-sm hover:bg-rose-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary border border-primary "
+          >
+            Read on {news[0].data.source}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .graphic {
+    @apply absolute w-full h-full top-0 left-0 md:left-[initial] overflow-hidden md:top-10 md:right-0 max-w-none md:max-w-lg rounded-[10px];
+    @apply after:w-full after:h-full after:block after:absolute after:top-0 after:left-0;
+  }
+  .graphic::after {
+    background: transparent url(/assets/connector-open.svg) no-repeat;
+    background-position: bottom -12rem right -10rem;
+    background-size: 205%;
+  }
+  .news {
+    @apply m-0 bg-white shadow-md p-6 max-w-md rounded-md space-y-16 relative md:w-auto lg:w-[95%];
+  }
+</style>

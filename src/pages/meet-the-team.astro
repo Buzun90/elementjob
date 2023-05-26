@@ -1,0 +1,23 @@
+---
+import Main from "@layouts/main.astro";
+import Header from "@components/meet-the-team/header.astro";
+import ContentSection from "@components/meet-the-team/content-section.astro";
+import ValuesSection from "@components/meet-the-team/values-section.astro";
+import TeamSection from "@components/meet-the-team/team-section.astro";
+import CtaSection from "@components/meet-the-team/cta-section.astro";
+import { CONFIG } from 'site.config.mjs';
+
+const seo = {
+  title: `Meet the team | ${CONFIG.SITE_NAME}`,
+  description: 'Industronix is a leading provider of industrial automation solutions. We provide a wide range of products and services to meet the needs of our customers. We are a one-stop shop for all your automation needs.',
+}
+---
+<Main content={seo} activeNav="about">
+  <div class="bg-white relative isolate overflow-hidden">
+    <Header />    
+    <ContentSection />
+    <ValuesSection />
+    <TeamSection />
+    <CtaSection />
+  </div>
+</Main>

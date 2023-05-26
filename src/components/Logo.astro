@@ -1,0 +1,6 @@
+---
+import { Image } from '@astrojs/image/components';
+import yourLogo from '@assets/images/elementjob-logo.png';
+import { CONFIG } from 'site.config.mjs';
+---
+<Image src={yourLogo} alt={CONFIG.SITE_NAME} height={70} width={180} format={'png'} />

@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+
+import { CONFIG } from 'site.config.mjs';
+import NewsDetails from '@layouts/newsDetails.astro';
+import getPageNumbers from '@utils/getPageNumbers';
+import getSortedPosts from '@utils/getSortedPosts';
+import NewsList from '@layouts/newsList.astro';
+
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const newsEntries = await getCollection('news', ({ data }) => !data.draft);
+  const newsResult = newsEntries.map(entry => ({
+    params: {
+      slug: entry.slug
+    },
+    props: {
+      entry
+    },
+  }));
+  const pagePaths = getPageNumbers(newsResult.length).map(pageNum => ({
+    params: { slug: String(pageNum) },
+  }));
+  return [...newsResult, ...pagePaths];
+}
+const { slug } = Astro.params;
+const { entry } = Astro.props;
+
+const posts = await getCollection("news");
+const sortedPosts = getSortedPosts(posts);
+const totalPages = getPageNumbers(sortedPosts.length);
+const currentPage =
+  slug && !isNaN(Number(slug)) && totalPages.includes(Number(slug))
+    ? Number(slug)
+    : 0;
+const lastPost = currentPage * CONFIG?.news?.postsPerPage;
+const startPost = lastPost - CONFIG?.news?.postsPerPage;
+const paginatedPosts = sortedPosts.slice(startPost, lastPost);
+---
+
+{entry ? (
+  <NewsDetails post={entry} />
+) : (
+  <NewsList posts={paginatedPosts} totalPages={totalPages.length} pageNum={currentPage} />
+)
