@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Diepte reiniging sanitair
 description: Professionele reiniging en desinfectie sanitairruimtes. 
-thumbnail: https://images.unsplash.com/photo-1526478806926-08c312a4d08a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80
+thumbnail: https://images.pexels.com/photos/4239036/pexels-photo-4239036.jpeg
 ---
 
 Hoewel dagelijkse schoonmaakbeurten van sanitaire ruimtes een groot deel van de reiniging omvatten, worden vaak de moeilijk bereikbare plaatsen onvoldoende gereinigd. Bij regelmatig gebruik van sanitaire ruimtes ontstaat er hardnekkige aanslag die niet volledig verwijderd wordt tijdens de dagelijkse schoonmaak. Dit resulteert in bacterie- en schimmelgroei en onaangename geuren. Elementjob kan deze problemen voorkomen door periodieke dieptereiniging van uw sanitaire ruimtes.

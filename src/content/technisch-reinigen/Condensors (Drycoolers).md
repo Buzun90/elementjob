@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Condensors (Drycoolers)
 description: Professionele reiniging en coating van condensors en drycoolers voor behoud van rendement en energie-efficiëntie. Voorkom storingen en verlaag uw energieverbruik. [Voeg SEO-beschrijving toe]
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://images.pexels.com/photos/2539462/pexels-photo-2539462.jpeg
 ---
 
 Professionele reiniging en onderhoud van condensors en drycoolers zijn essentieel om het rendement en de energie-efficiëntie van uw installatie te behouden. ElementJob biedt diensten voor het reinigen, coaten en onderhouden van condensors en drycoolers, waardoor storingen worden voorkomen en onnodig energieverbruik wordt verminderd.

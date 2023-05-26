@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Fancoil Units / Inductie Units
 description: Professionele reiniging en desinfectie van fancoil units en inductie units om klachten en ziekmeldingen te voorkomen. Ontvang een reinigingscertificaat voor naleving van de gestelde eisen. [Voeg SEO-beschrijving toe]
-thumbnail: https://images.unsplash.com/photo-1526478806926-08c312a4d08a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80
+thumbnail: https://klima-therm.co.uk/wp-content/uploads/2021/10/EBH_plenum_valves_no-shell_1-1200x734.jpg
 ---
 
 Professionele reiniging en desinfectie van fancoil units en inductie units is essentieel om problemen op de bedrijfsvloer te voorkomen. Vervuilde units kunnen namelijk bacteriën en schimmels in de lucht en de omgeving verspreiden, wat kan leiden tot klachten en ziekmeldingen van het personeel.

@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Airconditioning
 description: Professioneel technisch reinigen van airconditioningapparatuur, inductieunits, fancoilunits en luchtgordijnen. Verbeter de luchtkwaliteit en verleng de levensduur van uw airconditioningsysteem. 
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://images.unsplash.com/photo-1603435448724-a16923f79963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
 ---
 
 Professioneel technisch reinigen van airconditioningapparatuur, inductieunits, fancoilunits en luchtgordijnen is een specialiteit van Elementjob. Onze deskundige reinigingsdiensten verbeteren niet alleen de luchtkwaliteit, maar verlengen ook de levensduur van uw airconditioningsysteem.
