@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Koelcellen
 description: Professionele reiniging en desinfectie van fancoil units en inductie units om klachten en ziekmeldingen te voorkomen. Ontvang een reinigingscertificaat voor naleving van de gestelde eisen. 
-thumbnail: https://images.unsplash.com/photo-1526478806926-08c312a4d08a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80
+thumbnail: https://plus.unsplash.com/premium_photo-1663013522393-4c057b7a0b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 ---
 
 Om koel- en vriescellen optimaal te laten functioneren, is het essentieel om ze regelmatig te reinigen. Op deze manier kunnen de cellen hun maximale prestaties behouden en de producten op de juiste temperatuur bewaren. Het periodiek reinigen van koel- en vriescellen is een investering in het rendement en de levensduur van de apparatuur.
