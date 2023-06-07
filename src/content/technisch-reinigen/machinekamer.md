@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Machinekamer
 description: Professionele reiniging, onderhoud machinekamer.
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://preview.redd.it/lu3g1zu1edu41.jpg?auto=webp&s=1da1e484c67c2fcae87529731d2fa37ceecd61bc
 ---
 
 Een machinekamer vormt het technische hart van een bedrijf. Het is daarom essentieel dat deze ruimte schoon en hygiënisch is. ElementJob, met jarenlange ervaring in technische periodieke reiniging, staat klaar om uw machinekamer te onderhouden. Ook in geval van calamiteiten, zoals vloeistoflekkages van koelvloeistof en olie, reageren wij zo snel mogelijk.

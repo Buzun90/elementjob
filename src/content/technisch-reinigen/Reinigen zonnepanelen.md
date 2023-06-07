@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Zonnepanelen
 description: Professioneel technisch reinigen van zonnepanelen. 
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://images.unsplash.com/photo-1558449028-b53a39d100fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80
 ---
 
 Het reinigen van zonnepanelen is van essentieel belang om een optimale energieopbrengst te behalen. Met vuile panelen kan de stroomproductie zelfs tot 25% verminderen! Bij ElementJob begrijpen we het belang van een grondige en professionele reiniging, en daarom bieden wij op maat gemaakte oplossingen voor het reinigen van zonnepanelen.

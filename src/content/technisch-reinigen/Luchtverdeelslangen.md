@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Airsocks   Luchtverdeelslangen
 description: Professionele reiniging, onderhoud en levering van airsocks of luchtverdeelslangen voor optimale luchtverdeling en verbeterde luchtkwaliteit. Voorkom verstoppingen en behoud de functionaliteit van uw airsocks.
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://www.coltinfo.be/assets/images/3/lase-3-5ab1bb7d.jpg
 ---
 
 Professioneel technisch reinigen van airsocks of luchtverdeelslangen is van groot belang om het comfort en de luchtkwaliteit in een ruimte te waarborgen. ElementJob biedt diensten voor het reinigen, onderhouden en leveren van airsocks, waardoor een optimale luchtverdeling en verbeterde luchtkwaliteit worden gerealiseerd.

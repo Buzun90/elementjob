@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Legionella beheer
 description: ElementJob biedt uitgebreide legionella beheerdiensten om ervoor te zorgen dat uw waterinstallaties veilig en vrij van legionellabesmetting blijven. Legionella is een bacterie die de ziekte legionellose kan veroorzaken, een ernstige vorm van longontsteking. Het is van vitaal belang om uw waterinstallaties regelmatig te laten controleren en onderhouden om de risico's van legionellabesmetting te minimaliseren.
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://plus.unsplash.com/premium_photo-1661601679321-033fbcd5a1e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80
 ---
 
 ElementJob biedt uitgebreide legionella beheerdiensten om ervoor te zorgen dat uw waterinstallaties veilig en vrij van legionellabesmetting blijven. Legionella is een bacterie die de ziekte legionellose kan veroorzaken, een ernstige vorm van longontsteking. Het is van vitaal belang om uw waterinstallaties regelmatig te laten controleren en onderhouden om de risico's van legionellabesmetting te minimaliseren.

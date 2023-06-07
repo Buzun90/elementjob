@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Luchtbehandelingskasten
 description: Professionele reiniging en desinfectie van luchtbehandelinskasten.
-thumbnail: https://images.unsplash.com/photo-1526478806926-08c312a4d08a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80
+thumbnail: https://rosenberg.nl/wp-content/uploads/2013/10/20210826_164050.jpg
 ---
 
 

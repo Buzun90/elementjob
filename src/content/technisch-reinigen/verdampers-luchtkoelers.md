@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Verdampers/luchtkoelers
 description: Professioneel verdampers luchtkoelers. 
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://techtake.rovc.nl/media/c0eb2lb5/alfalaval-aircoolertyr-f.jpg
 ---
 
 

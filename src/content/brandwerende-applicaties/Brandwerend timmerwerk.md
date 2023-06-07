@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Brandwerend timmerwerk
 description: Bij ons kunt u rekenen op hoogwaardig brandwerend timmerwerk met behulp van Promatec voor het brandwerend bekleden van stalen constructies. Brandwerend staalbekleden is essentieel om de verspreiding van brand en destructurele integriteit van stalen elementen te behouden.
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://www.promat.com/siteassets/construction/content-repo-media/.global/articles/2019-02-fire-protective-boards---constructing-safer-buildings/fire-boards-application.jpg?v=49b8e3&width=1200&height=750&mode=Crop
 ---
 
 # Hi there!

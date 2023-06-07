@@ -3,7 +3,7 @@ draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Ventilatoren
 description: Professionele reiniging en coating van airfinbanken voor optimale prestaties en langere levensduur van uw installatie. Verminder energieverbruik en voorkom technische storingen. 
-thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
+thumbnail: https://comontec.eu/wp-content/uploads/2022/08/Algemeen-Onderhoud-LG-1-1024x1024.jpg
 ---
 
 
