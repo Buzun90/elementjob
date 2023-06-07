@@ -2,7 +2,7 @@
 draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Legionella beheer
-description: In extreme conditions of construction and aggregate environments, our range of engine, hydraulic, compressor and bulk filters provides superior protection.
+description: ElementJob biedt uitgebreide legionella beheerdiensten om ervoor te zorgen dat uw waterinstallaties veilig en vrij van legionellabesmetting blijven. Legionella is een bacterie die de ziekte legionellose kan veroorzaken, een ernstige vorm van longontsteking. Het is van vitaal belang om uw waterinstallaties regelmatig te laten controleren en onderhouden om de risico's van legionellabesmetting te minimaliseren.
 thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
 ---
 

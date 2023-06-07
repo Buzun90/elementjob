@@ -2,7 +2,7 @@
 draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Brandwerend timmerwerk
-description: In extreme conditions of construction and aggregate environments, our range of engine, hydraulic, compressor and bulk filters provides superior protection.
+description: Bij ons kunt u rekenen op hoogwaardig brandwerend timmerwerk met behulp van Promatec voor het brandwerend bekleden van stalen constructies. Brandwerend staalbekleden is essentieel om de verspreiding van brand en destructurele integriteit van stalen elementen te behouden.
 thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
 ---
 

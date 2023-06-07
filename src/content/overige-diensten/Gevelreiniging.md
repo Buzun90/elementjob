@@ -2,7 +2,7 @@
 draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Gevel reiniging
-description: In extreme conditions of construction and aggregate environments, our range of engine, hydraulic, compressor and bulk filters provides superior protection.
+description: Om de levensduur van uw gevel te verlengen, is het van groot belang om regelmatig een professionele gevelreiniging uit te laten voeren. Dit draagt niet alleen bij aan de duurzaamheid van uw gevel, maar optimaliseert ook de uitstraling van uw pand. Bij ElementJob voeren we gevelreiniging uit op een verantwoorde en milieuvriendelijke wijze. Voor elk project bepalen we de meest geschikte reinigingstechniek om het gewenste eindresultaat te behalen.
 thumbnail: https://images.unsplash.com/photo-1421940943431-d392fcc1079f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
 ---
 

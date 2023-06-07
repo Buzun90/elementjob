@@ -2,7 +2,7 @@
 draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Brandwerend afdichten
-description: In extreme conditions of construction and aggregate environments, our range of engine, hydraulic, compressor and bulk filters provides superior protection.
+description: ElementJob biedt professionele diensten voor brandwerend afdichten om de brandvertraging in uw gebouw aanzienlijk te verhogen. Brandveiligheid is van essentieel belang om mensen en eigendommen te beschermen tegen de verwoestende gevolgen van brand. Onze ervaren specialisten zorgen ervoor dat uw gebouw voldoet aan de brandveiligheidsnormen door de juiste brandwerende afdichtingen toe te passen.
 thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
 ---
 

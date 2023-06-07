@@ -2,7 +2,7 @@
 draft: false
 # layout: @layouts/IndustryPageLayout.astro
 title: Dakreiniging
-description: In extreme conditions of construction and aggregate environments, our range of engine, hydraulic, compressor and bulk filters provides superior protection.
+description: Om lekkages en waterschade te voorkomen, is periodieke reiniging van daken essentieel. Niet alleen ziet het dak er na de reiniging veel beter uit, maar ook de levensduur wordt verlengd. Bij Elementjob beschikken we over ruime ervaring in het reinigen van daken. Tevens kunt u bij ons terecht voor gevelreiniging.
 thumbnail: https://images.unsplash.com/photo-1605910347035-59a2b94f2061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80
 ---
 
