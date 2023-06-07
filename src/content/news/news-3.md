@@ -4,7 +4,7 @@ title: Belang van onderhoud aan zonnepanelen
 date: 2023-07-06 20:00
 source: Blog
 description:  De schoonmaak van zonnepanelen speelt een essentiële rol bij het optimaliseren van hun efficiëntie en prestaties. Het regelmatig reinigen van zonnepanelen biedt verschillende voordelen.
-thumbnail: https://images.pexels.com/photos/2539462/pexels-photo-2539462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+thumbnail: https://s.alicdn.com/@sc04/kf/H92f7b91226d74decb24088160124c9eeV.jpg_960x960.jpg
 category: MOU
 tags:
  - zonnepanelen
