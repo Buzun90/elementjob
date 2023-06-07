@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Belang van onderhoud aan klimaattechniek
-date: 2023-26-05 20:00
+date: 2023-01-05 20:00
 source: Blog
 description:  Klimaattechniek speelt een essentiële rol in het creëren van een comfortabele en gezonde omgeving.
 thumbnail: https://images.pexels.com/photos/2539462/pexels-photo-2539462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1

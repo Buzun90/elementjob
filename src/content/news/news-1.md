@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Legionellapreventie Hoe voorkomt u een uitbraak?
-date: 2023-15-05 15:39
+date: 2023-01-05 15:39
 source: Blog
 description:  In Nederland zijn er jaarlijks enkele tientallen uitbraken van legionella. Hoe kunt u een uitbraak voorkomen? Lees hier meer over legionellapreventie.
 thumbnail: https://images.pexels.com/photos/2339722/pexels-photo-2339722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
