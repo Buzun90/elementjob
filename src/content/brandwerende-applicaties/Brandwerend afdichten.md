@@ -1,14 +1,3 @@
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2SDQXG06CB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2SDQXG06CB');
-</script>
-
 ---
 draft: false
 # layout: @layouts/IndustryPageLayout.astro
@@ -33,5 +22,5 @@ Onze experts voeren nauwkeurig kitwerk en voegafdichting uit op brandwerende mat
 Certificering en naleving
 Na voltooiing van de brandwerende afdichtingswerkzaamheden ontvangt u een certificaat dat aantoont dat uw gebouw voldoet aan de geldende brandveiligheidsvoorschriften. Wij zorgen ervoor dat onze diensten voldoen aan de strengste normen en richtlijnen om uw gemoedsrust te waarborgen.
 
-Met onze brandwerend afdichtingsdiensten verhoogt u de brandvertraging in uw gebouw, wat cruciaal is voor de veiligheid van mensen en eigendommen. Neem vandaag nog contact met ons op om uw brandveiligheidsbehoeften te bespreken en een op maat gemaakt plan te ontwikkelen om uw gebouw optimaal te beschermen tegen de gevaren van brand.
+Met onze brandwerend afdichtingsdiensten verhoogt u de brandvertraging in uw gebouw, wat cruciaal is voor de veiligheid van mensen en eigendommen. Neem vandaag nog contact met ons op om uw brandveiligheidsbehoeften te bespreken en een op maat gemaakt plan te ontwikkelen, zo dat we samen uw gebouw optimaal kunnen beschermen tegen de gevaren van brand.
 
