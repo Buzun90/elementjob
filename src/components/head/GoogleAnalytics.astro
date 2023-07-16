@@ -3,7 +3,7 @@ export interface Props {
   id: string;
   partytown?: boolean;
 }
-const { id = "G-2SDQXG06CB", partytown = false } = Astro.props;
+const { id = "G-2SDQXG06CB", partytown = true } = Astro.props;
 const attrs = partytown ? { type: "text/partytown" } : {};
 ---
 
