@@ -26,8 +26,7 @@ tags:
  -  Zakelijke groei
  -  Moderne samenleving
  -  Stedelijke omgeving
- -  Ondergewaardeerd vakmanschap
- utiliteitsbouw
+ -  Ondergewaardeerd vakmanschap utiliteitsbouw
 ---
 
 ### Onderhoud aan Utiliteitsbouw: De Onzichtbare Kracht Achter Duurzame Functionaliteit
